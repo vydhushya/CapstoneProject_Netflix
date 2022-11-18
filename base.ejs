@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=locals.title ? title:'Netflix'%> </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <style>
+        body{
+            background-size: cover;
+            background-image: url('/assets/netflix.jpg');
+        }
+        .center-div{
+            padding-top:10%;
+        }
+
+        .title{
+        color: crimson;
+        }
+        .button{
+            background-color: crimson;
+            border-radius: 12px;
+            padding: 14px 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border py-5">
+        <div class="title pb-5">
+            <h2 class="font-width-bold">Unlimited movies, TV shows and more.</h2>
+            <span>Watch anywhere. Cancel anytime</span>
+        </div>
+        <form action="/views/Dashboard.ejs" class="pt-1">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" name="email"><br>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div><br>
+            <button type="submit" class="btn btn-success rounded-pill">Submit</button>
+        </form>
+    </div><br><br>
+        <form action="/views/signup.ejs" method="GET">
+            <button type="submit" name="signup" class="button">Signup</button>
+        </form>
+</div>
+
+</body>
+</html>

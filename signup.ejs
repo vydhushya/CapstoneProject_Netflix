@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=locals.title ? title:'Netflix'%> </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-size: cover;
+            background-image: url('/assets/netflixsignup.jpg');
+        }
+        .center-div{
+            padding-top:10%;
+        }
+
+        .title{
+        color: crimson;
+        }
+        .button{
+            background-color: crimson;
+            border-radius: 12px;
+            padding: 14px 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div style="text-align:center;border:5px  solid  rgb(239, 235, 235); background-color: rgba(61, 59, 59, 0.5); height:flex;margin:100px;height:500px;margin-left:400px;
+    margin-right: 500px;">
+        <h2 style="font-size:50px;color:white;font-family:'Rubik Distressed',cursive;font-family:'Sono',sans-serif;">Sign Up</h2>
+        <hr><hr>
+        <form action="/signup" method="GET">
+         <label for="fname" style="color: rgb(220, 210, 210); font-family: 'Sono', sans-serif;"><b>First name:</b></label>
+         <input type="text" id="fname" name="firstname" placeholder="First Name"><br><br>
+         <label for="lname" style="color: rgb(220, 210, 210); font-family: 'Sono', sans-serif;"><b>Last name:</b></label>
+         <input type="text" id="lname" name="lastname" placeholder="Last Name"><br><br>
+         <label for="eml" style="color: rgb(220, 210, 210); font-family: 'Sono', sans-serif;"><b>Email Id :</b></label>
+         <input type="email" id="eml" name="email" placeholder="Email"><br><br>
+         <label for="pwd" style="color: rgb(220, 210, 210); font-family: 'Sono', sans-serif;"><b>Password:</b></label>
+         <input type="password" id="pwd" name="password" placeholder="Password"><br><br>
+         <button type="submit" class="btn btn-success"><b>submit</b></button>
+       </form><br><br>
+       <form action="/navsubmit" method="GET">
+        <button class="btn btn-primary" type="submit" ><b>Login</b></button>
+       </form>
+       
+        
+    </div>
+
+    
+</body>
+</html>
