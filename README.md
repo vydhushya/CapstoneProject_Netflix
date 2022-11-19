@@ -1,4 +1,4 @@
-# CapstoneProject_Netflix
+# CapstoneProject_Netflix_clone
 Crud Application madde with Express.js, Firebase, ejs.
 Frontend is a basic duplicate of Netflix.
 A sample video of Code:
